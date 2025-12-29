@@ -4,7 +4,7 @@ import './index.css'
 import {createBrowserRouter,RouterProvider} from "react-router-dom"
 import { ClerkProvider } from '@clerk/clerk-react'
 import Homepage from './routes/Homepage.jsx'
-import PostListPage from './routes/Postlistpage.jsx'
+import PostListPage from './routes/PostlistPage.jsx'
 import Write from './routes/Write.jsx'
 import LoginPage from './routes/LoginPage.jsx'
 import RegisterPage from './routes/RegisterPage.jsx'
