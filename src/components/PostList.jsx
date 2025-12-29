@@ -45,7 +45,7 @@ const PostList = () => {
       loader={<h4>Loading more posts...</h4>}
       endMessage={
         <p>
-          <b style={allPosts.length==0 ?{fontSize:"larger",position:"absolute",fontWeight:"600",top:"35%",left:"45%"}:{}}>All posts loaded!</b>
+          <b style={allPosts.length==0 ?{fontSize:"larger",fontWeight:"600",top:"35%",left:"45%"}:{}}>All posts loaded!</b>
         </p>
       }
       // below props only if you need pull down functionality
@@ -53,7 +53,7 @@ const PostList = () => {
     >
       {allPosts.length>0 ?allPosts.map((post) => (
         <PostListItem key={post._id} post={post} />
-      )):<h1 style={{fontSize:"larger",fontWeight:"600",position:"fixed",top:"40%",left:"45%"}}>No Posts Found</h1>}
+      )):<h1 style={{fontSize:"larger",fontWeight:"600",top:"40%",left:"45%"}}>No Posts Found</h1>}
     </InfiniteScroll>
   );
 };
