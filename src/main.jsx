@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import {createBrowserRouter,RouterProvider} from "react-router-dom"
 import { ClerkProvider } from '@clerk/clerk-react'
-import Homepage from './routes/HomePage.jsx'
+import Homepage from './routes/Homepage.jsx'
 import PostListPage from './routes/Postlistpage.jsx'
 import Write from './routes/Write.jsx'
 import LoginPage from './routes/LoginPage.jsx'
