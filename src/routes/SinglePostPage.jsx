@@ -48,7 +48,7 @@ const SinglePostPage = () => {
       <div className="flex flex-col md:flex-row gap-12">
         {/* text */}
         <div className="lg:text-lg flex flex-col gap-6 text-justify">
-          <p>
+          {/* <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
             aspernatur rem odio quis obcaecati laborum ut ipsum blanditiis eum
             voluptates, velit non, perferendis quibusdam consequatur officia
@@ -137,7 +137,10 @@ const SinglePostPage = () => {
             obcaecati laborum ut ipsum blanditiis eum voluptates, velit non,
             perferendis quibusdam consequatur officia cupiditate accusamus
             tempore necessitatibus.
-          </p>
+          </p> 
+          
+          */
+          <p>{data.desc}</p>}
         </div>
         {/* menu   */}
         <div className="px-4 h-max sticky top-8">
