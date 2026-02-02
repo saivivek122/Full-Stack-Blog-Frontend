@@ -10,6 +10,7 @@ import { format } from "timeago.js";
 import userImg from "../../public/userImg.jpeg"
 const fetchPost=async(slug)=>{
   const res=await axios.get(`${import.meta.env.VITE_API_URL}/posts/${slug}`)
+  console.log(res)
   return res.data
 }
 const SinglePostPage = () => {
@@ -140,7 +141,13 @@ const SinglePostPage = () => {
           </p> 
           
           */
-          <p>{data.desc}</p>}
+         <div>
+          <h3>{data.desc}</h3>
+          <div dangerouslySetInnerHTML={{ __html: data.content }} />
+
+          </div>
+          
+          }
         </div>
         {/* menu   */}
         <div className="px-4 h-max sticky top-8">
