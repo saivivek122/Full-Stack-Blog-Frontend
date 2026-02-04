@@ -203,7 +203,7 @@ video && setValue(prev=>prev+`<p><iframe class="ql-video" src="${video.url}"/></
         </button>
         {console.log(progress)}
         {/* {"Progress:" + progress} */}
-        {mutation.isError && <span>{mutation.error.message}</span>}
+        {mutation.isError && <span>{" Failed to create post. Please fill all required fields."||mutation.error.message}</span>}
       </form>
     </div>
   );
